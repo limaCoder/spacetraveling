@@ -1,0 +1,22 @@
+.headerContainer {
+  height: 5rem;
+  background-color: var(--primary-background-color);
+}
+
+.headerContent {
+  max-width: 1120px;
+  height: 5rem;
+  margin: 0 auto;
+  padding-left: 2rem;
+
+  display: flex;
+  align-items: center;
+
+  img {
+    color: var(--purple-300);
+  }
+  strong {
+    color: var(--primary-text-color);
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,60 @@
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+
+  button {
+    background: transparent;
+    border: none;
+    margin: 0;
+    text-align: left;
+    padding: 64px 0 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    color: var(--highlight);
+    transition: filter .5s;
+    p {
+      color: var(--purple-300);
+    }
+  }
+}
+.post {
+  display: flex;
+  height: 6.75rem;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 700px;
+  transition: all .2s;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+    filter: brightness(1.8);
+  }
+
+  & + .post {
+    margin-top: 2rem;
+  }
+  .postTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-text-color);
+    transition: color 0.25s;
+
+  }
+  .postSubtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+  }
+}
